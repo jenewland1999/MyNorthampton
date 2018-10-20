@@ -1,0 +1,11 @@
+{
+  "name": "University of Northampton - Student Hub",
+  "short_name": "MyNorthampton",
+  "icons": [
+
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "orientation": "portrait"
+}

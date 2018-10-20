@@ -1,0 +1,207 @@
+/* Flexbox Layout - Used for browsers that support the newer (Level 1) Flexible Box Layout Model. You can find a link to the official specification here. https://www.w3.org/TR/css-flexbox-1/. E.g. Edge, Chrome, Safari, Firefox, etc. (Not Internet Explorer) */
+
+@media screen and (min-width: 280px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .location-panel nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .location-panel-item {
+    flex: 0 0 50%;
+    margin: 0;
+  }
+
+  .location-panel-item > figure,
+  .location-panel-item > figure > img {
+    display: block;
+  }
+
+  .location-panel-item > figure {
+    margin: 0.5em;
+  }
+
+  .quick-link {
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+
+  .quick-link img {
+    display: block;
+  }
+
+  .quick-link span
+  {
+    position: static;
+    display: block;
+    line-height: 1.15;
+  }
+}
+
+@media screen and (min-width: 375px) {
+
+  .main-content {
+    margin: 0;
+  }
+
+  .news-permalink,
+  .event-link {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0.75em 1em;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  /* Order of direct-descendents of body */
+  .main-header { order: 0; }
+  .nav-account { order: 2; }
+  .nav-main { order: 1; }
+  .main-content { order: 3; }
+  .quick-links { order: 4; }
+
+  .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-account {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  .nav-account form {
+    flex: 0 0 33.333%;
+  }
+
+  .nav-account ul {
+    display: flex;
+  }
+
+  .ad-banners {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .ad-banner {
+    flex: 0 0 50%;
+    padding: 0.5em;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .nav-splash {
+    display: none;
+  }
+
+  .nav-main-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btn-nav-toggle {
+    display: block;
+  }
+
+  .nav-main nav {
+    display: none;
+  }
+
+  .quick-links h3 {
+    margin-left: 1.333%;
+    padding-left: 0.5em;
+  }
+
+  .quick-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .quick-links li {
+    display: flex;
+    flex: 0 0 30%;
+    margin: 0 1.333% 1em;
+  }
+
+  .quick-link {
+    flex-grow: 1;
+    margin: 0;
+    padding: 1em;
+    transition: background-color 0.25s ease-in-out;
+  }
+
+  .quick-link:hover {
+    background-color: #EEE;
+  }
+  
+}
+
+@media screen and (min-width: 72em) {
+  .app {
+    /* max-width: none; */
+    /* margin: 0; */
+  }
+
+  .ad-banners {
+    margin-bottom: 1em;
+  }
+
+  .ad-banner {
+    margin: 0;
+    padding: 0;
+  }
+
+  .location-panel {
+    margin-bottom: 1em;
+  }
+
+  .location-panel-item {
+    flex: 0 0 25%;
+  }
+
+  .news-items,
+  .event-items {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .news-item,
+  .event-item {
+    flex: 1 0 48%;
+    margin: 1%;
+  }
+
+  .section-heading {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .quick-links li {
+    flex: 0 0 24%;
+    margin: 0 0.5% 1em;
+  }
+}

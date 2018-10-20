@@ -1,0 +1,425 @@
+/* Element Adjustments */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  margin: 0.5em;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+/* Specific Styles */
+.app {
+  max-width: 72em;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #000000;
+}
+
+.logo {
+  max-width: 10em;
+  margin: 0 auto;
+  padding: 1em 0 0;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  padding: 0.25em 0;
+  /* border-top: 0.12em solid #FFFFFF; */
+  color: #FFFFFF;
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+}
+
+.nav-account {
+  margin: 1em 0;
+  background-color: #DEDEDE;
+  text-align: right;
+}
+
+form.search {
+  display: block;
+}
+
+.input-search {
+  width: 100%;
+  display: inherit;
+  border: none;
+  padding: 0.75em 1em;
+  background-color: #ECECEC;
+  font-size: 0.875rem;
+
+}
+
+.nav-account ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-account ul li {
+  display: inherit;
+}
+
+.nav-account a {
+  display: inherit;
+  padding: 0.75em 1em;
+  color: #666666;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.nav-account a:hover {
+  background-color: #BEBEBE;
+}
+
+.nav-account a:focus {
+  outline: none;
+  background-color: #BEBEBE;
+  border-bottom: 0.25em solid #046DB5;
+}
+
+.nav-item-user a > i {
+  margin-left: 0.5em;
+}
+
+/* Nav Menu */
+.nav-splash,
+.nav-splash img {
+  position: relative;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.nav-splash .nav-splash-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.25);
+
+}
+
+/* Site Navigation */
+.nav-main .header-nav h2 {
+  display: block;
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 1.333;
+}
+
+/* Nav Icon */
+.nav-main-bar {
+  background-color: #000000;
+  padding: 0.75em 0.5em;
+}
+
+.btn-nav-toggle {
+  position: relative;
+  display: none;
+  /* height: 32px; */
+  width: 32px;
+  outline: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  line-height: 1;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.btn-nav-toggle:focus > span,
+.btn-nav-toggle:hover > span {
+  background-color: #DEDEDE;
+}
+
+.btn-nav-toggle span {
+  position: relative;
+  display: block;
+  height: 3px;
+  width: 32px;
+  border-radius: 0.25em;
+  background-color: #FFFFFF;
+  line-height: inherit;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.btn-nav-toggle span:first-of-type {
+  margin: 3.5px 0 0;
+}
+
+.btn-nav-toggle span:nth-of-type(2) {
+  margin: 8px 0;
+}
+
+.btn-nav-toggle span:last-of-type {
+  margin: 0 0 3.5px;
+}
+
+.nav-main nav {
+  background-color: #000000;
+}
+
+.nav-main nav a {
+  display: block;
+  border-top: 0.125em solid #FFFFFF;
+  padding: 0.75em 1.5em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nav-main nav a:hover {
+  border-left: 0.5em solid #E2231A;
+}
+
+/* Main Content */
+.main-content {
+  margin: 2em 0;
+}
+
+/* Ad Banners */
+.ad-banners {
+  margin-bottom: 1em;
+}
+
+.ad-banner {
+  max-width: 512px;
+  display: block;
+  margin: 0.5em 0;
+}
+
+.ad-banner > img {
+  display: inherit;
+}
+
+/* Location Panel */
+.location-panel-item {
+  max-width: 512px;
+  display: block;
+  margin: 0.5em 0;
+  transition: padding 0.125s ease-in-out;
+}
+
+.location-panel-item:hover {
+  padding: 0.25em;
+}
+
+.location-panel-item > figure,
+.location-panel-item > figure > img {
+  display: inherit;
+}
+
+/* News */
+
+/* TODO: Change colour scheme for news section */
+
+.news {
+  font-size: 0.875rem;
+  background-color: #ECECEC;
+  margin-bottom: 1.5em;
+  padding: 1em;
+}
+
+.news .section-heading {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+  font-size: 2rem;
+}
+
+.news .section-heading span {
+  display: inline-block;
+  padding: 0.125em;
+  border: 0.125em solid #E2231A;
+  color: #E2231A;
+  text-transform: uppercase;
+}
+
+.news-item {
+  margin: 1em 0;
+  padding: 1.5em;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.125);
+  background-color: #FFFFFF;
+}
+
+.news-heading {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #E2231A;
+  font-size: 1.618rem;
+}
+
+.news-datestamp {
+  margin-top: 0;
+  color: #666666;
+  font-size: 0.618rem;
+}
+
+.news-abstract {
+  margin-top: 0;
+  margin-bottom: 1.618em;
+  line-height: 1.618;
+}
+
+.news-permalink {
+  display: block;
+  background-color: #ECECEC;
+  padding: 0.75em 0.5em;
+  color: #000000;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+.news-permalink:hover {
+  background-color: #BEBEBE;
+}
+
+/* Events */
+
+/* TODO: Change colour scheme for news section */
+
+.events {
+  font-size: 0.875rem;
+  background-color: #ECECEC;
+  margin-bottom: 1.5em;
+  padding: 1em;
+}
+
+.events .section-heading {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+  font-size: 2rem;
+}
+
+.events .section-heading span {
+  display: inline-block;
+  padding: 0.125em;
+  border: 0.125em solid #046DB5;
+  color: #046DB5;
+  text-transform: uppercase;
+}
+
+.event-item {
+  margin: 1em 0;
+  padding: 1.5em;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.125);
+  background-color: #FFFFFF;
+}
+
+.event-heading {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #046DB5;
+  font-size: 1.618rem;
+}
+
+.event-datestamp {
+  margin-top: 0;
+  color: #666666;
+  font-size: 0.618rem;
+}
+
+.event-abstract {
+  margin-top: 0;
+  margin-bottom: 1.618em;
+  line-height: 1.618;
+}
+
+.event-link {
+  display: block;
+  margin-bottom: 0.5em;
+  padding: 0.75em 0.5em;;
+  background-color: #ECECEC;
+  color: #000000;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+.event-link:hover {
+  background-color: #BEBEBE;
+}
+
+.event-cta {
+  background-color: #046DB5;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.event-cta:hover {
+  background-color: #034f83;
+}
+
+/* Quick Links */
+.quick-links {
+  font-size: 0.875rem;
+}
+
+.quick-links nav {
+  /* Probably needed? */
+}
+
+.quick-links h3 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.quick-links ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.quick-links li {
+  display: inherit;
+}
+
+.quick-link {
+  position: relative;
+  display: inherit;
+  margin-bottom: 1.618em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.quick-link:hover {
+  font-weight: bold;
+}
+
+.quick-link img {
+  display: inline-block;
+  max-width: 60px;
+  max-height: 60px;
+  margin-right: 1em;
+}
+
+.quick-link span {
+  position: absolute;
+  display: inline-block;
+  line-height: 60px;
+}
