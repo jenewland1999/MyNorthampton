@@ -37,12 +37,13 @@
     </header>
     <nav class="nav-account">
       <form action="/q" method="GET" class="search">
-        <input type="text" class="input-search" placeholder="Search">
+        <label for="site-search" style="display: none;">Search</label>
+        <input type="text" id="site-search" class="input-search" aria-label="Search" placeholder="Search">
       </form>
       <ul>
-        <li class="nav-item nav-item-settings"><a href="#"><i class="fas fa-cog"></i></a></li>
-        <li class="nav-item nav-item-question"><a href="#"><i class="fas fa-question"></i></a></li>
-        <li class="nav-item-user"><a href="#">Jordan Newland <i class="fas fa-caret-down"></i></a></li>
+        <li class="nav-item nav-item-settings"><a href="#" title="Settings"><i class="fas fa-cog"></i></a></li>
+        <li class="nav-item nav-item-question"><a href="#" title="Help"><i class="fas fa-question"></i></a></li>
+        <li class="nav-item-user"><a href="#" title="Account">Jordan Newland <i class="fas fa-caret-down"></i></a></li>
       </ul>
     </nav>
     <aside class="nav-main">
@@ -53,7 +54,7 @@
         </figure>
         <div class="nav-main-bar">
           <h2>Menu</h2>
-          <button class="btn-nav-toggle">
+          <button class="btn-nav-toggle" aria-label="Toggle Navigation">
             <span></span>
             <span></span>
             <span></span>
@@ -78,54 +79,54 @@
       <!-- AD Banners -->
       <section class="ad-banners">
         <figure class="ad-banner">
-          <img src="public/img/banner-mynorthampton-min.png" alt="">
+          <img src="public/img/banner-mynorthampton-min.png" alt="Visit the MyNorthampton web app">
         </figure>
         <figure class="ad-banner">
-          <img src="public/img/banner-mynorthampton-app-min.png" alt="">
+          <img src="public/img/banner-mynorthampton-app-min.png" alt="Download the MyNorthamtpon mobile app on Android, iOS or Windows">
         </figure>
       </section>
       <!-- /AD Banners -->
       <!-- Location Panel -->
       <section class="location-panel">
         <nav>
-          <a href="#" class="location-panel-item" id="lpi-01">
+          <a href="#" class="location-panel-item" id="lpi-01" title="Web Mail">
             <figure>
-              <img src="public/img/square-webmail-min.png" alt="">
+              <img src="public/img/square-webmail-min.png" alt="Web Mail">
             </figure>
           </a>
-          <a href="#" class="location-panel-item" id="lpi-02">
+          <a href="#" class="location-panel-item" id="lpi-02" title="Northampton Integrated Learning Environment">
             <figure>
-              <img src="public/img/square-nile-min.png" alt="">
+              <img src="public/img/square-nile-min.png" alt="Northampton Integrated Learning Environment">
             </figure>
           </a>
-          <a href="#" class="location-panel-item" id="lpi-03">
+          <a href="#" class="location-panel-item" id="lpi-03" title="Timetables">
             <figure>
-              <img src="public/img/square-timetables-min.png" alt="">
+              <img src="public/img/square-timetables-min.png" alt="Timetables">
             </figure>
           </a>
-          <a href="#" class="location-panel-item" id="lpi-04">
+          <a href="#" class="location-panel-item" id="lpi-04" title="Library resources">
             <figure>
-              <img src="public/img/square-library-min.png" alt="">
+              <img src="public/img/square-library-min.png" alt="Library resources">
             </figure>
           </a>
-          <a href="#" class="location-panel-item" id="lpi-05">
+          <a href="#" class="location-panel-item" id="lpi-05" title="Access WiFi on campus">
             <figure>
-              <img src="public/img/square-wifi-min.png" alt="">
+              <img src="public/img/square-wifi-min.png" alt="Access WiFi on campus">
             </figure>
           </a>
-          <a href="#" class="location-panel-item" id="lpi-06">
+          <a href="#" class="location-panel-item" id="lpi-06" title="LinkedIn Learning (aka. Lynda.com)">
             <figure>
-              <img src="public/img/square-lynda-min.png" alt="">
+              <img src="public/img/square-lynda-min.png" alt="LinkedIn Learning (aka. Lynda.com)">
             </figure>
           </a>
-          <a href="#" class="location-panel-item" id="lpi-07">
+          <a href="#" class="location-panel-item" id="lpi-07" title="Download and/or use Microsoft Office 365">
             <figure>
-              <img src="public/img/square-office365-min.png" alt="">
+              <img src="public/img/square-office365-min.png" alt="Download and/or use Microsoft Office 365">
             </figure>
           </a>
-          <a href="#" class="location-panel-item" id="lpi-08">
+          <a href="#" class="location-panel-item" id="lpi-08" title="Waterside - The new campus">
             <figure>
-              <img src="public/img/square-waterside-min.png" alt="">
+              <img src="public/img/square-waterside-min.png" alt="Waterside - The new campus">
             </figure>
           </a>
         </nav>
