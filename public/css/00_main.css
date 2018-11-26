@@ -63,10 +63,17 @@ form.search {
   width: 100%;
   display: inherit;
   border: none;
-  padding: 0.75em 1em;
+  border-top: 0.25em solid transparent;
+  border-bottom: 0.25em solid transparent;
+  padding: 0.75em 1.25em;
+  font-size: 0.875rem;
   background-color: #ECECEC;
   font-size: 0.875rem;
+}
 
+.input-search:focus {
+  outline: none;
+  border-bottom: 0.25em solid #046DB5;
 }
 
 .nav-account ul {
@@ -82,12 +89,14 @@ form.search {
 
 .nav-account a {
   display: inherit;
-  padding: 0.75em 1em;
+  padding: 0.75em 1.25em;
   color: #000000;
   background-color: #DEDEDE;
   font-size: 0.875rem;
   text-decoration: none;
-  transition: all 0.25s ease-in-out;
+  border-top: 0.25em solid transparent;
+  border-bottom: 0.25em solid transparent;
+  transition: background-color 0.25s ease-in-out;
 }
 
 .nav-account a:hover {
