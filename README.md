@@ -4,7 +4,7 @@ Personal project that overhauled The University of Northampton Student Portal (E
 
 ## Google Lighthouse Audits
 
-As mentioned above this site was tested using Google Lighthouse Audit a tool for measuring website's performance, accessability, SEO and best practices.
+As mentioned above this site was tested using Google Lighthouse Audit a tool for measuring website's performance, accessibility, SEO and best practices.
 
 Here are the results from both mobile and desktop Lighthouse Audits:
 
@@ -16,6 +16,6 @@ Here are the results from both mobile and desktop Lighthouse Audits:
 
 ![MyNorthampton Google Lighthouse Audit Score for Desktop](https://cdn.jenewland.me.uk/media/images/mynorthampton-lighthouse-audit-desktop.png)
 
-## Assests Disclaimer
+## Assets Disclaimer
 
-Assets (in the form of images) of the site are the property of The University of Northampton. 
+Assets (in the form of images) of the site are the property of The University of Northampton.
