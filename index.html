@@ -1,297 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+        <title>MyNorthampton - App</title>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>MyNorthampton - App</title>
+        <meta name="description" content="This is a description" />
+        <meta name="robots" content="noarchive" />
+        <link rel="manifest" href="manifest.json" />
 
-    <meta name="description" content="This is a description">
-    <meta name="robots" content="noarchive">
-    <link rel="manifest" href="manifest.json">
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="https://www.northampton.ac.uk/wp-content/themes/uon-2018/assets/images/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="https://www.northampton.ac.uk/wp-content/themes/uon-2018/assets/images/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="https://www.northampton.ac.uk/wp-content/themes/uon-2018/assets/images/favicon/favicon-16x16.png"
+        />
+        <link
+            rel="manifest"
+            href="https://www.northampton.ac.uk/wp-content/themes/uon-2018/assets/images/favicon/site.webmanifest"
+        />
+        <link
+            rel="mask-icon"
+            href="https://www.northampton.ac.uk/wp-content/themes/uon-2018/assets/images/favicon/safari-pinned-tab.svg"
+            color="#046db5"
+        />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="msapplication-config" content="browserconfig.xml" />
+        <meta name="theme-color" content="#ffffff" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="https://www.northampton.ac.uk/wp-content/themes/uon-2018/assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://www.northampton.ac.uk/wp-content/themes/uon-2018/assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://www.northampton.ac.uk/wp-content/themes/uon-2018/assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="https://www.northampton.ac.uk/wp-content/themes/uon-2018/assets/images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="https://www.northampton.ac.uk/wp-content/themes/uon-2018/assets/images/favicon/safari-pinned-tab.svg"
-      color="#046db5">
-    <link rel="shortcut icon" href="favicon.ico">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-config" content="browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+        />
+        <link rel="stylesheet" href="./public/css/lib/normalize.css" />
+        <link rel="stylesheet" href="./public/css/00_main.css" />
+        <link rel="stylesheet" href="./public/css/01_flex.css" />
+        <link rel="stylesheet" href="./public/css/02_grid.css" />
+    </head>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
-    <link rel="stylesheet" href="public/css/lib/normalize.css">
-    <link rel="stylesheet" href="public/css/00_main.css">
-    <link rel="stylesheet" href="public/css/01_flex.css">
-    <link rel="stylesheet" href="public/css/02_grid.css">
-  </head>
-
-  <body class="app">
-    <header class="main-header">
-      <figure class="logo">
-        <img src="public/img/logo-min.png" alt="University of Northampton">
-      </figure>
-      <h1 class="title">Student Hub</h1>
-    </header>
-    <nav class="nav-account">
-      <form action="/q" method="GET" class="search">
-        <label for="site-search" style="display: none;">Search</label>
-        <input type="text" id="site-search" class="input-search" aria-label="Search" placeholder="Search">
-      </form>
-      <ul>
-        <li class="nav-item nav-item-settings"><a href="#" title="Settings"><i class="fas fa-cog"></i></a></li>
-        <li class="nav-item nav-item-question"><a href="#" title="Help"><i class="fas fa-question"></i></a></li>
-        <li class="nav-item-user"><a href="#" title="Account">Jordan Newland <i class="fas fa-caret-down"></i></a></li>
-      </ul>
-    </nav>
-    <aside class="nav-main">
-      <header class="header-nav">
-        <figure class="nav-splash">
-          <img src="public/img/banner-main-navigation-min.jpg" alt="Working Together Creating Oppertunities">
-          <div class="nav-splash-overlay"></div>
-        </figure>
-        <div class="nav-main-bar">
-          <h2>Menu</h2>
-          <button class="btn-nav-toggle" aria-label="Toggle Navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </header>
-      <nav>
-        <a href="#">Study</a>
-        <a href="#">Postgraduate Research Students</a>
-        <a href="#">About UoN</a>
-        <a href="#">Support and Services</a>
-        <a href="#">Changemaker Hub</a>
-        <a href="#">Social</a>
-        <a href="#">Student Impact</a>
-        <a href="#">Student Voice</a>
-        <a href="#">Waterside</a>
-        <a href="#">News</a>
-        <a href="#">Events</a>
-      </nav>
-    </aside>
-    <main class="main-content">
-      <!-- AD Banners -->
-      <section class="ad-banners">
-        <figure class="ad-banner">
-          <img src="public/img/banner-mynorthampton-min.png" alt="Visit the MyNorthampton web app">
-        </figure>
-        <figure class="ad-banner">
-          <img src="public/img/banner-mynorthampton-app-min.png" alt="Download the MyNorthamtpon mobile app on Android, iOS or Windows">
-        </figure>
-      </section>
-      <!-- /AD Banners -->
-      <!-- Location Panel -->
-      <section class="location-panel">
-        <nav>
-          <a href="#" class="location-panel-item" id="lpi-01" title="Web Mail">
-            <figure>
-              <img src="public/img/square-webmail-min.png" alt="Web Mail">
+    <body class="app">
+        <header class="main-header">
+            <figure class="logo">
+                <img
+                    src="./public/img/logo-min.png"
+                    alt="University of Northampton"
+                />
             </figure>
-          </a>
-          <a href="#" class="location-panel-item" id="lpi-02" title="Northampton Integrated Learning Environment">
-            <figure>
-              <img src="public/img/square-nile-min.png" alt="Northampton Integrated Learning Environment">
-            </figure>
-          </a>
-          <a href="#" class="location-panel-item" id="lpi-03" title="Timetables">
-            <figure>
-              <img src="public/img/square-timetables-min.png" alt="Timetables">
-            </figure>
-          </a>
-          <a href="#" class="location-panel-item" id="lpi-04" title="Library resources">
-            <figure>
-              <img src="public/img/square-library-min.png" alt="Library resources">
-            </figure>
-          </a>
-          <a href="#" class="location-panel-item" id="lpi-05" title="Access WiFi on campus">
-            <figure>
-              <img src="public/img/square-wifi-min.png" alt="Access WiFi on campus">
-            </figure>
-          </a>
-          <a href="#" class="location-panel-item" id="lpi-06" title="LinkedIn Learning (aka. Lynda.com)">
-            <figure>
-              <img src="public/img/square-lynda-min.png" alt="LinkedIn Learning (aka. Lynda.com)">
-            </figure>
-          </a>
-          <a href="#" class="location-panel-item" id="lpi-07" title="Download and/or use Microsoft Office 365">
-            <figure>
-              <img src="public/img/square-office365-min.png" alt="Download and/or use Microsoft Office 365">
-            </figure>
-          </a>
-          <a href="#" class="location-panel-item" id="lpi-08" title="Waterside - The new campus">
-            <figure>
-              <img src="public/img/square-waterside-min.png" alt="Waterside - The new campus">
-            </figure>
-          </a>
+            <h1 class="title">Student Hub</h1>
+        </header>
+        <nav class="nav-account">
+            <form action="/q" method="GET" class="search">
+                <label for="site-search" style="display: none;">Search</label>
+                <input
+                    type="text"
+                    id="site-search"
+                    class="input-search"
+                    aria-label="Search"
+                    placeholder="Search"
+                />
+            </form>
+            <ul>
+                <li class="nav-item nav-item-settings">
+                    <a href="#" title="Settings"><i class="fas fa-cog"></i></a>
+                </li>
+                <li class="nav-item nav-item-question">
+                    <a href="#" title="Help"><i class="fas fa-question"></i></a>
+                </li>
+                <li class="nav-item-user">
+                    <a href="#" title="Account">
+                        Jordan Newland <i class="fas fa-caret-down"></i>
+                    </a>
+                </li>
+            </ul>
         </nav>
-      </section>
-      <!-- /Location Panel -->
-      <!-- News -->
-      <section class="news">
-        <h3 class="section-heading">
-          <span>Breaking</span> News
-        </h3>
-        <div class="news-items">
-          <article class="news-item" id="news_03">
-            <p class="news-datestamp">09 October 2018</p>
-            <h4 class="news-heading">Internet access on Waterside: What's going on?</h4>
-            <p class="news-abstract">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis placeat fugit
-              minus veniam id voluptatum suscipit consequatur iure accusantium quas.
-            </p>
-            <a href="#" class="news-permalink">Read More...</a>
-          </article>
-          <article class="news-item" id="news_01">
-            <p class="news-datestamp">09 October 2018</p>
-            <h4 class="news-heading">The future's bright for nursing students</h4>
-            <p class="news-abstract">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis placeat fugit
-              minus veniam id voluptatum suscipit consequatur iure accusantium quas.
-            </p>
-            <a href="#" class="news-permalink">Read More...</a>
-          </article>
-          <article class="news-item" id="news_02">
-            <p class="news-datestamp">09 October 2018</p>
-            <h4 class="news-heading">NILE has been updated to reflect student feedback</h4>
-            <p class="news-abstract">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis placeat fugit
-              minus veniam id voluptatum suscipit consequatur iure accusantium quas.
-            </p>
-            <a href="#" class="news-permalink">Read More...</a>
-          </article>
-        </div>
-      </section>
-      <!-- /News -->
-      <!-- Events -->
-      <section class="events">
-        <h3 class="section-heading"><span>Activities &amp;</span> Events</h3>
-        <div class="event-items">
-          <article class="event-item" id="event_03">
-            <p class="event-datestamp">09 October 2018</p>
-            <h4 class="event-heading">Open Day - Saturday 17 November 2018</h4>
-            <p class="event-abstract"><strong class="event-abstract-date">17th November 2018</strong> - Come along to
-              our
-              brand new campus for a look around. Experience subject topics, explore modern, luxuorius halls of
-              residence
-              and get down to the student's union to take a look at our societies and sport clubs.
-            </p>
-            <a href="#" class="event-link event-cta">Register for Event</a>
-            <a href="#" class="event-link event-permalink">Learn More...</a>
-          </article>
-          <article class="event-item" id="event_01">
-            <p class="event-datestamp">09 October 2018</p>
-            <h4 class="event-heading">Meet the new UoN Police Team</h4>
-            <p class="event-abstract"><strong class="event-abstract-date">17th November 2018</strong> - Come along to
-              our
-              brand new campus for a look around. Experience subject topics, explore modern, luxuorius halls of
-              residence
-              and get down to the student's union to take a look at our societies and sport clubs.
-            </p>
-            <a href="#" class="event-link event-cta">Register for Event</a>
-            <a href="#" class="event-link event-permalink">Learn More...</a>
-          </article>
-          <article class="event-item" id="event_02">
-            <p class="event-datestamp">09 October 2018</p>
-            <h4 class="event-heading">Enterprise Boost Launch Event</h4>
-            <p class="event-abstract"><strong class="event-abstract-date">17th November 2018</strong> - Come along to
-              our
-              brand new campus for a look around. Experience subject topics, explore modern, luxuorius halls of
-              residence
-              and get down to the student's union to take a look at our societies and sport clubs.
-            </p>
-            <a href="#" class="event-link event-cta">Register for Event</a>
-            <a href="#" class="event-link event-permalink">Learn More...</a>
-          </article>
-        </div>
-      </section>
-      <!-- /Events -->
-    </main>
-    <!-- /main.main-content -->
-    <!-- aside.quick-links -->
-    <aside class="quick-links">
-      <h3>Quick Links</h3>
-      <nav>
-        <ul>
-          <li>
-            <a href="#" class="quick-link">
-              <img src="public/img/quick-links/link_exams.png" alt="quick link">
-              <span>Exams and results</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="quick-link">
-              <img src="public/img/quick-links/link_term.png" alt="quick link">
-              <span>Term dates</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="quick-link">
-              <img src="public/img/quick-links/link_student.png" alt="quick link">
-              <span>Student support</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="quick-link">
-              <img src="public/img/quick-links/link_print.png" alt="quick link">
-              <span>Print, copy and scan</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="quick-link">
-              <img src="public/img/quick-links/link_office.png" alt="quick link">
-              <span>Download Office 2016 Student Edition</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="quick-link">
-              <img src="public/img/quick-links/link_staff.png" alt="quick link">
-              <span>Staff directory</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="quick-link">
-              <img src="public/img/quick-links/link_policies.png" alt="quick link">
-              <span>Policies, procedures and regulations</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="quick-link">
-              <img src="public/img/quick-links/link_union.png" alt="quick link">
-              <span>Students' Union</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="quick-link">
-              <img src="public/img/quick-links/link_assessment.png" alt="quick link">
-              <span>Assessment Review 2017</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="quick-link">
-              <img src="public/img/quick-links/link_website.png" alt="quick link">
-              <span>Public website</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="quick-link">
-              <img src="public/img/quick-links/link_preenrolment.png" alt="quick link">
-              <span>Pre-Enrolment</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
-    <!-- /aside.quick-links -->
-    <footer class="mastheader">
-
-    </footer>
-    <!-- <script src="public/js/bundle.js"></script> -->
-  </body>
-  <!-- /body.app -->
-
+        <aside class="nav-main">
+            <header class="header-nav">
+                <figure class="nav-splash">
+                    <img
+                        src="./public/img/banner-main-navigation-min.jpg"
+                        alt="Working Together Creating Oppertunities"
+                    />
+                    <div class="nav-splash-overlay"></div>
+                </figure>
+                <div class="nav-main-bar">
+                    <h2>Menu</h2>
+                    <button
+                        class="btn-nav-toggle"
+                        aria-label="Toggle Navigation"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+            <nav>
+                <a href="#">Study</a>
+                <a href="#">Postgraduate Research Students</a>
+                <a href="#">About UoN</a>
+                <a href="#">Support and Services</a>
+                <a href="#">Changemaker Hub</a>
+                <a href="#">Social</a>
+                <a href="#">Student Impact</a>
+                <a href="#">Student Voice</a>
+                <a href="#">Waterside</a>
+                <a href="#">News</a>
+                <a href="#">Events</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <!-- AD Banners -->
+            <section class="ad-banners">
+                <figure class="ad-banner">
+                    <img
+                        src="./public/img/banner-mynorthampton-min.png"
+                        alt="Visit the MyNorthampton web app"
+                    />
+                </figure>
+                <figure class="ad-banner">
+                    <img
+                        src="./public/img/banner-mynorthampton-app-min.png"
+                        alt="Download the MyNorthamtpon mobile app on Android, iOS or Windows"
+                    />
+                </figure>
+            </section>
+            <!-- /AD Banners -->
+            <!-- Location Panel -->
+            <section class="location-panel">
+                <nav>
+                    <a
+                        href="#"
+                        class="location-panel-item"
+                        id="lpi-01"
+                        title="Web Mail"
+                    >
+                        <figure>
+                            <img
+                                src="./public/img/square-webmail-min.png"
+                                alt="Web Mail"
+                            />
+                        </figure>
+                    </a>
+                    <a
+                        href="#"
+                        class="location-panel-item"
+                        id="lpi-02"
+                        title="Northampton Integrated Learning Environment"
+                    >
+                        <figure>
+                            <img
+                                src="./public/img/square-nile-min.png"
+                                alt="Northampton Integrated Learning Environment"
+                            />
+                        </figure>
+                    </a>
+                    <a
+                        href="#"
+                        class="location-panel-item"
+                        id="lpi-03"
+                        title="Timetables"
+                    >
+                        <figure>
+                            <img
+                                src="./public/img/square-timetables-min.png"
+                                alt="Timetables"
+                            />
+                        </figure>
+                    </a>
+                    <a
+                        href="#"
+                        class="location-panel-item"
+                        id="lpi-04"
+                        title="Library resources"
+                    >
+                        <figure>
+                            <img
+                                src="./public/img/square-library-min.png"
+                                alt="Library resources"
+                            />
+                        </figure>
+                    </a>
+                    <a
+                        href="#"
+                        class="location-panel-item"
+                        id="lpi-05"
+                        title="Access WiFi on campus"
+                    >
+                        <figure>
+                            <img
+                                src="./public/img/square-wifi-min.png"
+                                alt="Access WiFi on campus"
+                            />
+                        </figure>
+                    </a>
+                    <a
+                        href="#"
+                        class="location-panel-item"
+                        id="lpi-06"
+                        title="LinkedIn Learning (aka. Lynda.com)"
+                    >
+                        <figure>
+                            <img
+                                src="./public/img/square-lynda-min.png"
+                                alt="LinkedIn Learning (aka. Lynda.com)"
+                            />
+                        </figure>
+                    </a>
+                    <a
+                        href="#"
+                        class="location-panel-item"
+                        id="lpi-07"
+                        title="Download and/or use Microsoft Office 365"
+                    >
+                        <figure>
+                            <img
+                                src="./public/img/square-office365-min.png"
+                                alt="Download and/or use Microsoft Office 365"
+                            />
+                        </figure>
+                    </a>
+                    <a
+                        href="#"
+                        class="location-panel-item"
+                        id="lpi-08"
+                        title="Waterside - The new campus"
+                    >
+                        <figure>
+                            <img
+                                src="./public/img/square-waterside-min.png"
+                                alt="Waterside - The new campus"
+                            />
+                        </figure>
+                    </a>
+                </nav>
+            </section>
+            <!-- /Location Panel -->
+            <!-- News -->
+            <section class="news">
+                <h3 class="section-heading"><span>Breaking</span> News</h3>
+                <div class="news-items">
+                    <article class="news-item" id="news_03">
+                        <p class="news-datestamp">09 October 2018</p>
+                        <h4 class="news-heading">
+                            Internet access on Waterside: What's going on?
+                        </h4>
+                        <p class="news-abstract">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Veritatis placeat fugit minus veniam id
+                            voluptatum suscipit consequatur iure accusantium
+                            quas.
+                        </p>
+                        <a href="#" class="news-permalink">Read More...</a>
+                    </article>
+                    <article class="news-item" id="news_01">
+                        <p class="news-datestamp">09 October 2018</p>
+                        <h4 class="news-heading">
+                            The future's bright for nursing students
+                        </h4>
+                        <p class="news-abstract">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Veritatis placeat fugit minus veniam id
+                            voluptatum suscipit consequatur iure accusantium
+                            quas.
+                        </p>
+                        <a href="#" class="news-permalink">Read More...</a>
+                    </article>
+                    <article class="news-item" id="news_02">
+                        <p class="news-datestamp">09 October 2018</p>
+                        <h4 class="news-heading">
+                            NILE has been updated to reflect student feedback
+                        </h4>
+                        <p class="news-abstract">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Veritatis placeat fugit minus veniam id
+                            voluptatum suscipit consequatur iure accusantium
+                            quas.
+                        </p>
+                        <a href="#" class="news-permalink">Read More...</a>
+                    </article>
+                </div>
+            </section>
+            <!-- /News -->
+            <!-- Events -->
+            <section class="events">
+                <h3 class="section-heading">
+                    <span>Activities &amp;</span> Events
+                </h3>
+                <div class="event-items">
+                    <article class="event-item" id="event_03">
+                        <p class="event-datestamp">09 October 2018</p>
+                        <h4 class="event-heading">
+                            Open Day - Saturday 17 November 2018
+                        </h4>
+                        <p class="event-abstract">
+                            <strong class="event-abstract-date">
+                                17th November 2018
+                            </strong>
+                            - Come along to our brand new campus for a look
+                            around. Experience subject topics, explore modern,
+                            luxurious halls of residence and get down to the
+                            student's union to take a look at our societies and
+                            sport clubs.
+                        </p>
+                        <a href="#" class="event-link event-cta">
+                            Register for Event
+                        </a>
+                        <a href="#" class="event-link event-permalink">
+                            Learn More...
+                        </a>
+                    </article>
+                    <article class="event-item" id="event_01">
+                        <p class="event-datestamp">09 October 2018</p>
+                        <h4 class="event-heading">
+                            Meet the new UoN Police Team
+                        </h4>
+                        <p class="event-abstract">
+                            <strong class="event-abstract-date">
+                                17th November 2018
+                            </strong>
+                            - Come along to our brand new campus for a look
+                            around. Experience subject topics, explore modern,
+                            luxurious halls of residence and get down to the
+                            student's union to take a look at our societies and
+                            sport clubs.
+                        </p>
+                        <a href="#" class="event-link event-cta">
+                            Register for Event
+                        </a>
+                        <a href="#" class="event-link event-permalink">
+                            Learn More...
+                        </a>
+                    </article>
+                    <article class="event-item" id="event_02">
+                        <p class="event-datestamp">09 October 2018</p>
+                        <h4 class="event-heading">
+                            Enterprise Boost Launch Event
+                        </h4>
+                        <p class="event-abstract">
+                            <strong class="event-abstract-date">
+                                17th November 2018
+                            </strong>
+                            - Come along to our brand new campus for a look
+                            around. Experience subject topics, explore modern,
+                            luxurious halls of residence and get down to the
+                            student's union to take a look at our societies and
+                            sport clubs.
+                        </p>
+                        <a href="#" class="event-link event-cta">
+                            Register for Event
+                        </a>
+                        <a href="#" class="event-link event-permalink">
+                            Learn More...
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <!-- /Events -->
+        </main>
+        <!-- /main.main-content -->
+        <!-- aside.quick-links -->
+        <aside class="quick-links">
+            <h3>Quick Links</h3>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="quick-link">
+                            <img
+                                src="public/img/quick-links/link_exams.png"
+                                alt="quick link"
+                            />
+                            <span>Exams and results</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="quick-link">
+                            <img
+                                src="public/img/quick-links/link_term.png"
+                                alt="quick link"
+                            />
+                            <span>Term dates</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="quick-link">
+                            <img
+                                src="public/img/quick-links/link_student.png"
+                                alt="quick link"
+                            />
+                            <span>Student support</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="quick-link">
+                            <img
+                                src="public/img/quick-links/link_print.png"
+                                alt="quick link"
+                            />
+                            <span>Print, copy and scan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="quick-link">
+                            <img
+                                src="public/img/quick-links/link_office.png"
+                                alt="quick link"
+                            />
+                            <span>Download Office 2016 Student Edition</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="quick-link">
+                            <img
+                                src="public/img/quick-links/link_staff.png"
+                                alt="quick link"
+                            />
+                            <span>Staff directory</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="quick-link">
+                            <img
+                                src="public/img/quick-links/link_policies.png"
+                                alt="quick link"
+                            />
+                            <span>Policies, procedures and regulations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="quick-link">
+                            <img
+                                src="public/img/quick-links/link_union.png"
+                                alt="quick link"
+                            />
+                            <span>Students' Union</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="quick-link">
+                            <img
+                                src="public/img/quick-links/link_assessment.png"
+                                alt="quick link"
+                            />
+                            <span>Assessment Review 2017</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="quick-link">
+                            <img
+                                src="public/img/quick-links/link_website.png"
+                                alt="quick link"
+                            />
+                            <span>Public website</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="quick-link">
+                            <img
+                                src="public/img/quick-links/link_preenrolment.png"
+                                alt="quick link"
+                            />
+                            <span>Pre-Enrolment</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- /aside.quick-links -->
+        <footer></footer>
+    </body>
+    <!-- /body.app -->
 </html>
