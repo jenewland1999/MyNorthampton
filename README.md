@@ -1,6 +1,6 @@
-# MyNorthampton
+# My Northampton
 
-Personal project that overhauled The University of Northampton Student Portal (Extranet). This was achieved through improved RWD utilising CSS Grid with appropriate fallbacks for legacy browsers. The project's success was measured through the use of Google Lighthouse.
+A personal project that overhauled the University of Northampton Student Portal (Extranet). This was achieved through improved RWD utilising CSS Grid with appropriate fallbacks for legacy browsers. The project's success was measured through the use of Google Lighthouse.
 
 ## Google Lighthouse Audits
 
@@ -10,11 +10,11 @@ Here are the results from both mobile and desktop Lighthouse Audits:
 
 ### Mobile Audit
 
-![MyNorthampton Google Lighthouse Audit Score for Mobile](https://cdn.jenewland.me.uk/media/images/mynorthampton-lighthouse-audit-mobile.png)
+![My Northampton Google Lighthouse Audit Score for Mobile](https://cdn.jenewland.me.uk/media/images/mynorthampton-lighthouse-audit-mobile.png)
 
 ### Desktop Audit
 
-![MyNorthampton Google Lighthouse Audit Score for Desktop](https://cdn.jenewland.me.uk/media/images/mynorthampton-lighthouse-audit-desktop.png)
+![My Northampton Google Lighthouse Audit Score for Desktop](https://cdn.jenewland.me.uk/media/images/mynorthampton-lighthouse-audit-desktop.png)
 
 ## Assets Disclaimer
 
